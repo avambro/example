@@ -42,6 +42,10 @@ def calculadora():
                 print(f"{num1} / {num2} = {division(num1, num2)}")
         else:
             print("Opción no válida. Intente de nuevo.")
+#por Melisa
+def potencia(a,b):
+    return a ** b 
 
 if __name__ == "__main__":
     calculadora()
+
