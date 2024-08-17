@@ -1,13 +1,6 @@
-def suma (a,b ):
-    return a + b 
-
-def resta (a,b):
-    return a - b
-
-def multiplicacion(a, b):
-    return a * b
 
 def calculadora():
+    print()
     print("Bienvenido a la calculadora básica")
     print("Seleccione la operación:")
     print("1. Suma")
@@ -39,3 +32,20 @@ def calculadora():
                 print(f"{num1} / {num2} = {division(num1, num2)}")
         else:
             print("Opción no válida. Intente de nuevo.")
+            
+def suma (a,b ):
+    return a + b 
+
+def resta (a,b):
+    return a - b
+
+def multiplicacion(a, b):
+    return a * b
+
+def division(a, b):
+    if b == 0:
+        return "Error: No se puede dividir entre cero"
+    else:
+        return a / b
+
+calculadora()
