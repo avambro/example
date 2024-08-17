@@ -7,6 +7,9 @@ def resta (a,b):
 def multiplicacion(a, b):
     return a * b
 
+def division(a, b):
+    return a / b
+
 def calculadora():
     print("Bienvenido a la calculadora básica")
     print("Seleccione la operación:")
@@ -39,3 +42,6 @@ def calculadora():
                 print(f"{num1} / {num2} = {division(num1, num2)}")
         else:
             print("Opción no válida. Intente de nuevo.")
+
+if __name__ == "__main__":
+    calculadora()
