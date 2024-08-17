@@ -10,6 +10,10 @@ def multiplicacion(a, b):
 def division(a, b):
     return a / b
 
+#por Melisa
+def potencia(a,b):
+    return a ** b 
+
 def calculadora():
     print("Bienvenido a la calculadora básica")
     print("Seleccione la operación:")
@@ -17,14 +21,15 @@ def calculadora():
     print("2. Resta")
     print("3. Multiplicación")
     print("4. División")
+    print("5. Potencia")
     while True:
-        opcion = input("Ingrese el número de la operación (1/2/3/4) o 'q' para salir: ")
+        opcion = input("Ingrese el número de la operación (1/2/3/4/5) o 'q' para salir: ")
         
         if opcion == 'q':
             print("Saliendo de la calculadora. ¡Hasta luego!")
             break
         
-        if opcion in ['1', '2', '3', '4']:
+        if opcion in ['1', '2', '3', '4', '5']:
             try:
                 num1 = float(input("Ingrese el primer número: "))
                 num2 = float(input("Ingrese el segundo número: "))
@@ -40,12 +45,10 @@ def calculadora():
                 print(f"{num1} * {num2} = {multiplicacion(num1, num2)}")
             elif opcion == '4':
                 print(f"{num1} / {num2} = {division(num1, num2)}")
+            elif opcion == '5':
+                print(f"{num1} ** {num2} = {potencia(num1, num2)}")
         else:
             print("Opción no válida. Intente de nuevo.")
-#por Melisa
-def potencia(a,b):
-    return a ** b 
 
 if __name__ == "__main__":
     calculadora()
-
