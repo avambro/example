@@ -36,5 +36,6 @@ def calculadora():
         else:
             print("Opción no válida. Intente de nuevo.")
 
+#Agregado por Brayan
 if __name__ == "__main__":
     calculadora()
