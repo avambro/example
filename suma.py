@@ -33,8 +33,10 @@ def calculadora():
         else:
             print("Opción no válida. Intente de nuevo.")
             
+            
 def suma (a,b ):
     return a + b 
+#Neytan Gerardy Morales yac  carné: 2318131
 
 def resta (a,b):
     return a - b
@@ -43,9 +45,11 @@ def multiplicacion(a, b):
     return a * b
 
 def division(a, b):
-    if b == 0:
-        return "Error: No se puede dividir entre cero"
-    else:
-        return a / b
+    return a / b
+            
+
 
 calculadora()
+
+if __name__ == "__main__":
+    calculadora()
